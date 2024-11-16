@@ -1,0 +1,86 @@
+<!--Shareable-Resume and downloadable -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Shareable-Resume</h1> <!--changes made-->
+    <form id="resume-form">
+
+<fieldset>
+
+<legend>Personal Information</legend>
+
+    <label for="name">name</label>
+    <input type="text" id="name" placeholder="Enter Your Name" required>
+
+    <label for="username">username</label>  <!--adding this attribute-->  
+    <input type="text" id="username" placeholder="Enter Your username" required>  
+    
+    <label for="email">email</label>
+    <input type="email" id="email" placeholder="Enter Your email" required>
+
+    <label for="phone">phone</label>
+    <input type="phone" id="phone" placeholder="Enter Your Phone Number" required>
+
+</fieldset>
+
+
+<fieldset>
+
+<legend>Education</legend>
+
+    <label for="Education">Education</label>
+    <textarea id="Education" placeholder="Enter Your Education" rows="4" required></textarea>
+
+</fieldset>
+
+<fieldset>
+
+    <legend>Experience</legend>
+    
+        <label for="Experience">Experience</label>
+        <textarea id="Experience" placeholder="Enter Your Experience" rows="4" required></textarea>
+    
+    </fieldset>
+    
+    <fieldset>
+
+        <legend>Skills</legend>
+        
+            <label for="Skills">Skills</label>
+            <textarea id="Skills" placeholder="Enter Your Skills" rows="4" required></textarea>
+        
+        </fieldset>
+
+<button type="submit">Generate Resume</button>
+
+</form>    
+
+    <br>
+<div id="resume-display" contenteditable="true"></div>
+<br>
+<!--Shareable link and download Resume-->
+
+<div id="Shareable-Link-Container" style="display: none;"><h2>Shareable-Link</h2>
+
+    <p>Here is your Resume for download</p>
+    <a href="#" id="Shareable-link" target="_blank"></a>
+    <button id="download-pdf">download as PDF</button>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
